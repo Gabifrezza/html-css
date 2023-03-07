@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+#principal{
+    color: white;
+    background-color:rgb(43, 105, 105);}
+
+    .aprendendo{ color: black;
+    
+    font-size: 20px;}
+
+    .basico{ color: blue;
+        background-color: rgba(241, 204, 177, 0.356);
+        font-style: italic;
+
+    }
+
+    .intermediario{
+        color: green
+    }
+
+    .avancado{
+        color: red
+    }
+    .destaque{
+        background-color: aqua;
+    }
+

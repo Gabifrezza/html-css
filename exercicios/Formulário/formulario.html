@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Formulário</title>
+
+
+    <style>
+        body{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-image: linear-gradient(to right,
+        #226f9e,#042438);}
+
+        .box{ 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color:#161F30;
+        padding: 20px;
+        border-radius: 10px;
+        color:white;
+        width: 20%;}
+
+
+        #submit{ 
+        background-color:rgb(11, 11, 243) ;
+        width: 100%;
+        padding: 15px;
+        border: none;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 10px;}
+
+
+        #submit:hover{
+        background-color: rgb(12, 12, 65) ;}
+
+
+
+        fieldset{
+        border: 2px solid dodgerblue;}
+
+        legend{
+        border: 2px solid dodgerblue;
+        padding: 10px;
+        text-align: center;
+        background-color:dodgerblue;
+        border-radius: 5px;
+        color: white;}
+
+        .inputbox{
+        position: relative;}
+
+        .inputuser{
+        background: none;
+        border: none;
+        border-bottom: 1px solid white;
+        outline:none;
+        color: white;
+        font-size: 15px;
+        width: 100%;
+        letter-spacing:2px;}
+
+        .labelinput{
+        position: absolute;
+        top: 0px;
+        left: 2px;
+        pointer-events: none;
+        transition: .5s;}
+
+        
+        .inputuser:focus ~ .labelinput,
+        .inputuser:valid ~ .labelinput
+        {top:-20px;
+        font-size:12px;
+        color: white ;}
+
+        #data_nascimento{ border: none;
+        padding: 5px;
+        border-radius: 5px;
+        outline:none;
+        font-size: 15px;}
+    </style>
+
+
+</head>
+<body>
+    <div class="box">
+    <form action=""></form>
+    <fieldset>
+        <br>
+        <legend><b>Formulário de Clientes</b></legend>
+        <div class="inputbox">
+        
+        <input type="text" name="nome" id="nome" class="inputuser" required>
+        <label for="nome" class="labelinput"> Nome Completo</label>
+    </div>
+    <br><br>
+    <div class="inputbox">
+        <input type="text" name="email" id="email" class="inputuser" required>
+        <label for="nome"class="labelinput"> Email</label>
+    </div>
+    <br><br>
+    <div class="inputbox">
+        <input type="tel" name="telefone" id="telefone" class="inputuser" required>
+        <label for="telefone"class="labelinput"> Telefone</label>
+    </div>
+    <p>Sexo:</p>
+    <input type="radio" id="feminino" name="genero" value="Feminino" required>
+    <label for="feminino">Feminino</label>
+
+    <input type="radio" id="masculino" name="genero" value="masculino" required>
+    <label for="masculino">Masculino</label>
+
+    <input type="radio" id="outro" name="genero" value="outro" required>
+    <label for="outro">Outro</label>
+    <br><br>
+    
+    <label for="data_nascimento"> <b>Data de Nascimento:</b> </label>
+    <br>
+   <input type="date" name="data_nascimento" id="data_nascimento" class="data_nascimento">
+   <br><br>
+
+   <div class="inputbox">
+    <input type="text" name="cidade" id="cidade" class="inputuser" required>
+    <label for="cidade"class="labelinput"> Cidade</label>
+    <br><br>
+    <div class="inputbox">
+        <input type="text" name="estado" id="estado" class="inputuser" required>
+        <label for="estado"class="labelinput"> Estado</label>
+        <br><br>
+        <div class="inputbox">
+            <input type="text" name="endereço" id="endereço" class="inputuser" required>
+            <label for="endereço"class="labelinput"> Endereço</label>
+            <br><br>
+    <input type="submit" name="submit" id="submit">
+    
+    
+
+    
+</body>
+</html>
